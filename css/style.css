@@ -1,0 +1,152 @@
+<!-- ========== css/style.css ========== -->
+body {
+margin: 0;
+font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+color: #333;
+background: #f7f9f8;
+line-height: 1.8;
+}
+header {
+background: #e6f0ed;
+padding: 30px 20px;
+text-align: center;
+}
+.home-hero {
+background: #dfeee9;
+padding: 60px 20px;
+text-align: center;
+}
+nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+padding: 0;
+margin: 0;
+background: #2f6f62;
+}
+nav a {
+color: #fff;
+text-decoration: none;
+padding: 15px 18px;
+}
+.container {
+max-width: 1000px;
+margin: 40px auto;
+padding: 20px;
+background: #fff;
+}
+.home-features {
+display: block;
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+
+.home-features .feature {
+margin-bottom: 25px;
+}
+.feature {
+background: #f0f5f4;
+padding: 20px;
+border-radius: 6px;
+flex: 1;
+min-width: 240px;
+}
+/* ===== 定例会 お知らせ（トップ用） ===== */
+/* ===== 定例会 お知らせ（トップ用・強調） ===== */
+.regular-meeting {
+  background: linear-gradient(135deg, #fffbe6 0%, #fdf3c0 100%);
+  border-left: 8px solid #f0c040;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 35px;
+}
+
+.regular-meeting h3 {
+  margin-top: 0;
+  font-size: 1.35em;
+  color: #7a5200;
+}
+
+.regular-meeting h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #8a5a00;
+}
+
+.badge {
+  background: #f0c040;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+
+.regular-lead {
+  font-size: 1.05em;
+  margin: 15px 0;
+}
+
+.regular-info {
+  list-style: none;
+  padding: 0;
+}
+
+.regular-info li {
+  padding: 6px 0;
+}
+
+.regular-note {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+.address {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.map-link {
+  color: #2f6f62;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.next-meeting {
+  margin-top: 12px;
+  color: #c00000;
+  font-weight: bold;
+}
+
+.next-meeting.highlight {
+  text-align: center;
+  font-size: 1.2em;
+  background: #fff0f0;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 1px solid #e0a0a0;
+}
+
+/* ===== 発声支援 日程表 ===== */
+.schedule-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+font-size: 0.95em;
+}
+
+
+.schedule-table th,
+.schedule-table td {
+border: 1px solid #ddd;
+padding: 8px 10px;
+}
+
+
+.schedule-table th {
+background: #e6f0ed;
+text-align: left;
+}

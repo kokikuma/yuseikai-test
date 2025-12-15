@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>悠声会｜声を失っても、人生は続きます</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="home-hero">
+  <h1>声を失っても、<br>人生は続きます</h1>
+  <p>喉頭全摘後の方とご家族を支える NPO法人 悠声会</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="./index.html">ホーム</a></li>
+    <li><a href="./about.html">悠声会について</a></li>
+    <li><a href="./activity.html">定例会</a></li>
+    <li><a href="./voice.html">技術情報</a></li>
+    <li><a href="./news.html">お知らせ</a></li>
+    <li><a href="./contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<!-- TemplateBeginEditable name="home_main" -->
+<main>
+
+<section class="home-intro">
+  <p>
+    悠声会は、喉頭全摘手術などにより声を失った方々が、
+    再び社会とつながり、安心して生活できるよう支援する患者会です。
+  </p>
+</section>
+
+<section class="home-features">
+  <div class="feature">
+    <h3>発声支援</h3>
+    <p>食道発声・電気喉頭など、それぞれに合った発声方法を練習します。</p>
+  </div>
+  <div class="feature">
+    <h3>交流・相談</h3>
+    <p>同じ経験を持つ仲間との交流を通じ、不安や悩みを共有できます。</p>
+  </div>
+  <div class="feature">
+    <h3>情報提供</h3>
+    <p>医療・福祉制度や日常生活に役立つ情報を分かりやすくお伝えします。</p>
+  </div>
+</section>
+
+<section class="home-message">
+  <h2>ごあいさつ</h2>
+  <p>
+    悠声会は、声を失ったあとも安心して生活できるよう、
+    仲間とともに支え合う活動を続けています。
+  </p>
+</section>
+
+<section class="home-news">
+  <h2>お知らせ</h2>
+  <ul>
+    <li><span class="date">2025.○○.○○</span> 発声練習会を開催しました</li>
+    <li><span class="date">2025.○○.○○</span> 交流会のお知らせ</li>
+    <li><span class="date">2025.○○.○○</span> ホームページをリニューアルしました</li>
+  </ul>
+</section>
+
+<section class="home-cta">
+  <a href="/contact.html" class="btn">お問い合わせはこちら</a>
+</section>
+
+</main>
+<!-- TemplateEndEditable -->
+
+<footer>
+  <p>© NPO法人 悠声会</p>
+</footer>
+
+</body>
+</html>
