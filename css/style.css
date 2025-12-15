@@ -150,3 +150,101 @@ padding: 8px 10px;
 background: #e6f0ed;
 text-align: left;
 }
+
+
+.news-list {
+  margin: 0;
+  padding-left: 1em;
+}
+
+.news-list li {
+  margin-bottom: 0.5em;
+}
+
+.news-list a {
+  margin-left: 0.5em;
+}
+
+.arrow {
+  margin: 0 0.4em;
+  font-weight: bold;
+}
+
+
+
+/* ===== 問い合わせ ===== */
+
+.contact-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-page h2 {
+  margin-bottom: 0.5em;
+}
+
+.contact-note {
+  margin-bottom: 1.5em;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 1.5em;
+  background: #f7f7f7;
+  border-radius: 6px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 0.8em;
+  min-width: 260px;
+}
+
+.contact-item .icon {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+.contact-item a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.small-note {
+  margin: 0.3em 0 0;
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+  .contact-box {
+    flex-direction: column;
+  }
+}
+
+.contact-mail-btn {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.mail-button {
+  display: inline-block;
+  padding: 0.9em 2em;
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.mail-button:hover {
+  background-color: #004f99;
+}

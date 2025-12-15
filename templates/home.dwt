@@ -10,18 +10,18 @@
 <body>
 
 <header class="home-hero">
-  <h1>声を失っても、<br>人生は続きます</h1>
-  <p>喉頭全摘後の方とご家族を支える NPO法人 悠声会</p>
+  <h1>YOU<br>SAY</h1>
+  <p>このWeb サイトは喉頭癌や下咽頭癌等の手術により、喉摘者になった皆様の集まりである「悠声会」のサイトです</p>
+   <p>悠声会はＨ２７年４月認定特定非営利活動法人として認証されました。</p>
 </header>
 
 <nav>
   <ul>
     <li><a href="./index.html">ホーム</a></li>
-    <li><a href="./about.html">悠声会について</a></li>
-    <li><a href="./activity.html">定例会</a></li>
+    <li><a href="./activity.html">定例会報告</a></li>
     <li><a href="./voice.html">技術情報</a></li>
-    <li><a href="./news.html">お知らせ</a></li>
-    <li><a href="./contact.html">お問い合わせ</a></li>
+    <li><a href="./techinfo.html">会員の声・資料</a></li>
+   <li><a href="./contact.html">お問い合わせ</a></li>
   </ul>
 </nav>
 
@@ -29,10 +29,7 @@
 <main>
 
 <section class="home-intro">
-  <p>
-    悠声会は、喉頭全摘手術などにより声を失った方々が、
-    再び社会とつながり、安心して生活できるよう支援する患者会です。
-  </p>
+  <p>「悠声会」は喉頭癌や下咽頭癌等の手術により声を失った方々が、安心して生活できるよう支えあう喉摘者の会です</p>
 </section>
 
 <section class="home-features">
