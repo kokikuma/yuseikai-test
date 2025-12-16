@@ -6,6 +6,18 @@ color: #333;
 background: #f7f9f8;
 line-height: 1.8;
 }
+body {
+  font-size: 15px;
+}
+
+.panel p,
+.panel li {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+
+
 header {
 background: #e6f0ed;
 padding: 30px 20px;
@@ -170,6 +182,7 @@ background: #fff;
 .address {
   font-size: 0.9em;
   color: #555;
+
 }
 
 .map-link {
@@ -178,20 +191,7 @@ background: #fff;
   text-decoration: underline;
 }
 
-.next-meeting {
-  margin-top: 12px;
-  color: #c00000;
-  font-weight: bold;
-}
 
-.next-meeting.highlight {
-  text-align: center;
-  font-size: 1.2em;
-  background: #fff0f0;
-  padding: 12px 10px;
-  border-radius: 8px;
-  border: 1px solid #e0a0a0;
-}
 
 /* ===== 発声支援 日程表 ===== */
 .schedule-table {
@@ -331,3 +331,289 @@ min-width: 240px;
   background-color: #004f99;
 }
 
+
+
+/* ===== お知らせ ===== */
+.home-news {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 30px 28px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.home-news h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #2f6f62;
+}
+
+.home-news ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-news li {
+  display: flex;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0.95rem;
+}
+
+.home-news li:last-child {
+  border-bottom: none;
+}
+
+.home-news .date {
+  min-width: 110px;
+  font-weight: bold;
+  color: #2f6f62;
+}
+
+
+/* ===== メニューテスト ===== */
+
+.home-panels {
+  max-width: 900px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.panel {
+  background: #ffffff;
+  padding: 30px 26px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border-left: 6px solid #2f6f62;
+  margin-bottom: 30px;
+}
+
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+
+
+.panel h2 {
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #2f6f62;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid #e0efea;
+}
+
+
+/* ===== 定例会一覧 ===== */
+.meeting-list {
+  list-style: none;
+  padding: 0 34px;
+  margin: 0;
+}
+
+.meeting-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+.meeting-list li:last-child {
+  border-bottom: none;
+}
+
+.meeting-name {
+  font-weight: 500;
+}
+
+/* ===== 状態バッジ ===== */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* 実施 */
+.status.active {
+  background: #e6f4f1;
+  color: #2f6f62;
+}
+
+/* 準備中 */
+.status.preparing {
+  background: #fff4d6;
+  color: #8a6a00;
+}
+
+/* 中止 */
+.status.paused {
+  background: #fbeaea;
+  color: #a33;
+}
+
+/* 詳細リンク */
+.detail-link {
+  margin-left: auto;
+  font-size: 0.85rem;
+  color: #2f6f62;
+  text-decoration: underline;
+}
+/* ===== パネル内 メールボタン ===== */
+.panel-mail-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: #2f6f62;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.panel-mail-btn:hover {
+  background: #25584f;
+  transform: translateY(-1px);
+}
+/* ===== メール表示（横並び） ===== */
+.panel-mail {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.panel-mail-inline {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.mail-label {
+  margin-right: 4px;
+  color: #666;
+}
+
+.mail-address {
+  color: #2f6f62;
+  text-decoration: underline;
+}
+
+
+/* ボタンはそのままでOKだが中央寄せになる */
+.panel-mail-btn {
+  display: inline-block;
+}
+
+/* 説明ラベル */
+.panel-mail-label {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* メールアドレス */
+.panel-mail-address {
+  margin-top: 2px;
+  font-size: 0.85rem;
+}
+
+.panel-mail-address a {
+  color: #555;
+  text-decoration: underline;
+}
+
+
+/* ===== 最新定例会 ===== */
+/* ===== 最新定例会 全体 ===== */
+.latest-meeting {
+  background: #fef9e1;          /* ブロック背後の色 */
+  max-width: 720px;             /* 横幅を制限して中央感 */
+  margin: 10px auto;               /* 中央配置 */
+  padding: 10px 24px;
+  border-radius: 12px;
+}
+
+/* ===== タイトル行 ===== */
+.latest-title {
+  margin: 0 0 8px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+}
+
+/* 最新バッジ */
+.latest-badge {
+  padding: 3px 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #ebbf47;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ===== 日時・会場 ===== */
+.latest-info {
+  margin: 0;
+  padding-left: 1.2em;     /* 左を少しあける */
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== 住所ブロック ===== */
+.latest-info .address {
+  display: block;
+  margin: 10px auto 6px;   /* 上下余白・中央寄せ */
+  padding: 10px 14px;
+  max-width: 420px;        /* 住所部分を狭く */
+  background: #ffffff;
+  border-radius: 8px;
+  text-align: left;        /* 文字は左揃え */
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 地図リンクを住所の横に */
+.latest-info .map-link {
+  margin-left: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* ===== 詳しくはこちら ===== */
+.latest-link {
+  display: inline-block;
+  margin-left: 1.2em;   /* 日時・場所と揃える */
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #2f6f62;
+  text-decoration: underline;
+}
+
+
+/* ===== 次回開催日枠付き ===== */
+.next-meeting.highlight {
+  text-align: center;            /* 中央寄せ */
+  font-size: 1.2rem;             /* 少し大きめ */
+  font-weight: bold;             /* 強調 */
+  color: #c00000;                /* 赤系で目立たせる */
+  background: #fff0f0;           /* 背景色 */
+  padding: 12px 20px;            /* 上下左右の余白 */
+  border-radius: 8px;            /* 角丸 */
+  border: 2px solid #e0a0a0;    /* 枠線 */
+  max-width: 300px;              /* 幅を調整 */
+  margin: 20px auto;             /* 上下に余白、左右中央寄せ */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* 軽い影 */
+}
