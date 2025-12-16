@@ -27,15 +27,6 @@
   </div>
 </header>
 
-<nav class="site-nav">
-  <ul class="nav-menu">
-    <li><a href="index.html" class="nav-link">ホーム</a></li>
-    <li><a href="#teireikai" class="nav-link">定例会</a></li>
-    <li><a href="#gijutsu" class="nav-link">技術情報</a></li>
-    <li><a href="#voice" class="nav-link">会員の声・資料</a></li>
-    <li><a href="#contact" class="nav-link nav-cta">お問合せ</a></li>
-  </ul>
-</nav>
 
 
 <!-- TemplateBeginEditable name="home_main" -->

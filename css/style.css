@@ -28,8 +28,8 @@ text-align: center;
 
 .container {
 max-width: 1000px;
-margin: 40px auto;
-padding: 20px;
+margin: 0px auto;
+padding:0px 20px;
 background: #fff;
 }
 
@@ -99,6 +99,12 @@ background: #fff;
   background: #e1edf2;
   transform: translateY(-2px);
 }
+
+.nav-link.active {
+  background: #1f7a8c;
+  color: #fff !important;
+}
+
 
 /* ===== 強調ボタン（お問い合わせ） ===== */
 .nav-cta {
@@ -336,7 +342,7 @@ min-width: 240px;
 /* ===== お知らせ ===== */
 .home-news {
   max-width: 900px;
-  margin: 60px auto;
+  margin: 30px auto;
   padding: 30px 28px;
   background: #ffffff;
   border-radius: 12px;
@@ -379,7 +385,7 @@ min-width: 240px;
 
 .home-panels {
   max-width: 900px;
-  margin: 70px auto;
+  margin: 20px auto;
   padding: 0 20px;
 }
 
@@ -534,86 +540,144 @@ min-width: 240px;
 
 
 /* ===== 最新定例会 ===== */
-/* ===== 最新定例会 全体 ===== */
+/* 最新定例会ブロック */
 .latest-meeting {
-  background: #fef9e1;          /* ブロック背後の色 */
-  max-width: 720px;             /* 横幅を制限して中央感 */
-  margin: 10px auto;               /* 中央配置 */
-  padding: 10px 24px;
+  background: #fef9e1;
+  max-width: 720px;
+  margin: 20px auto;
+  padding: 8px 24px;
   border-radius: 12px;
 }
 
-/* ===== タイトル行 ===== */
+/* タイトル行 */
 .latest-title {
-  margin: 0 0 8px;
-  font-weight: 600;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 1.05rem;
+  font-weight: 600;
+  font-size: 1.6rem;
 }
 
-/* 最新バッジ */
+/* バッジ */
 .latest-badge {
-  padding: 3px 10px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #fff;
   background: #ebbf47;
+  color: #fff;
   border-radius: 999px;
-  white-space: nowrap;
+  padding: 3px 10px;
+  font-weight: bold;
 }
 
-/* ===== 日時・会場 ===== */
-.latest-info {
-  margin: 0;
-  padding-left: 1.2em;     /* 左を少しあける */
+/* 日時・会場 */
+/* ラベルと値を左右揃え */
+.latest-info .info-item {
+  display: flex;
+  gap: 10px;              /* ラベルと値の間隔 */
+  margin-bottom: 6px;
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.5;
+}
+.latest-info .info-label {
+  font-weight: 600;
+  width: 70px;            /* ラベルの幅を固定して揃える */
+  flex-shrink: 0;
+  color: #2f6f62;
 }
 
-/* ===== 住所ブロック ===== */
+.latest-info .info-value {
+  flex-grow: 1;
+  color: #333;
+}
+
+/* 住所ブロック 
+.address {
+	display: block;
+	max-width: 420px;
+	margin: 5px auto 10px;
+	padding: 0px 14px;*/
+	/*background: #fdf9e2;
+	border-radius: 8px;
+	border: 2px solid #999;
+	text-align: left;
+	font-size: 0.85rem;
+	color: #555;
+}*/
+
+/* 住所ブロックはそのまま中央寄せ */
 .latest-info .address {
   display: block;
-  margin: 10px auto 6px;   /* 上下余白・中央寄せ */
+  max-width: 420px;
+  margin: 10px auto 6px;
   padding: 10px 14px;
-  max-width: 420px;        /* 住所部分を狭く */
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
-  text-align: left;        /* 文字は左揃え */
+  text-align: left;
   font-size: 0.9rem;
   color: #555;
 }
 
-/* 地図リンクを住所の横に */
+/* 地図リンク 
+.map-link {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}*/
+
+/* 地図リンク */
 .latest-info .map-link {
   margin-left: 6px;
   font-size: 0.85rem;
   white-space: nowrap;
-}
-
-/* ===== 詳しくはこちら ===== */
-.latest-link {
-  display: inline-block;
-  margin-left: 1.2em;   /* 日時・場所と揃える */
-  margin-top: 6px;
-  font-size: 0.9rem;
-  color: #2f6f62;
   text-decoration: underline;
+  color: #2f6f62;
 }
 
 
-/* ===== 次回開催日枠付き ===== */
+/* 次回開催日枠付き */
 .next-meeting.highlight {
-  text-align: center;            /* 中央寄せ */
-  font-size: 1.2rem;             /* 少し大きめ */
-  font-weight: bold;             /* 強調 */
-  color: #c00000;                /* 赤系で目立たせる */
-  background: #fff0f0;           /* 背景色 */
-  padding: 12px 20px;            /* 上下左右の余白 */
-  border-radius: 8px;            /* 角丸 */
-  border: 2px solid #e0a0a0;    /* 枠線 */
-  max-width: 300px;              /* 幅を調整 */
-  margin: 20px auto;             /* 上下に余白、左右中央寄せ */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08); /* 軽い影 */
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c00000;
+  background: #fff0f0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: 2px solid #e0a0a0;
+  max-width: 300px;
+  margin: 20px auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
+/* 資料リスト用ULデザイン（コンパクト版） */
+.doc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doc-list li {
+  background: #f9fdfb;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;   /* 少し小さめの角丸 */
+  padding: 6px 12px;    /* 上下の余白を半分に */
+  margin-bottom: 6px;   /* リスト間隔も少し狭く */
+  transition: all 0.2s ease;
+}
+
+.doc-list li:hover {
+  background: #f1f7f6;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* 軽めの影 */
+}
+
+.doc-list li a {
+  text-decoration: none;
+  color: #2f6f62;
+  font-weight: 500;
+  display: block;
+  line-height: 1.3;    /* 行間も少し狭く */
+}
+
+.doc-list li a:hover {
+  text-decoration: underline;
+  color: #1f5a4d;
+}
+
