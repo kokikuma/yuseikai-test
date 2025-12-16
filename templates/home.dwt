@@ -9,64 +9,40 @@
 
 <body>
 
-<header class="home-hero">
-  <h1>YOU<br>SAY</h1>
-  <p>このWeb サイトは喉頭癌や下咽頭癌等の手術により、喉摘者になった皆様の集まりである「悠声会」のサイトです</p>
-   <p>悠声会はＨ２７年４月認定特定非営利活動法人として認証されました。</p>
+<header class="hero">
+  <div class="hero-inner">
+    <h1>
+      悠声会【YOU SAY】
+    </h1>
+    <h2>
+      声を失っても、人生は続きます。
+    </h2>
+    
+    <p class="hero-lead">    
+      喉頭癌や下咽頭癌等の手術により声を失った方々が<br>新たな発声方法・社会的扶助など情報交換し、支えあう喉摘者の会です
+    </p>
+    <p class="small-note">悠声会はＨ２７年４月認定特定非営利活動法人として認証されました。</p><br>
+    
+
+  </div>
 </header>
 
-<nav>
-  <ul>
-    <li><a href="./index.html">ホーム</a></li>
-    <li><a href="./activity.html">定例会報告</a></li>
-    <li><a href="./voice.html">技術情報</a></li>
-    <li><a href="./techinfo.html">会員の声・資料</a></li>
-   <li><a href="./contact.html">お問い合わせ</a></li>
+<nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="index.html" class="nav-link">ホーム</a></li>
+    <li><a href="#teireikai" class="nav-link">定例会</a></li>
+    <li><a href="#gijutsu" class="nav-link">技術情報</a></li>
+    <li><a href="#voice" class="nav-link">会員の声・資料</a></li>
+    <li><a href="#contact" class="nav-link nav-cta">お問合せ</a></li>
   </ul>
 </nav>
+
 
 <!-- TemplateBeginEditable name="home_main" -->
 <main>
 
-<section class="home-intro">
-  <p>「悠声会」は喉頭癌や下咽頭癌等の手術により声を失った方々が、安心して生活できるよう支えあう喉摘者の会です</p>
-</section>
 
-<section class="home-features">
-  <div class="feature">
-    <h3>発声支援</h3>
-    <p>食道発声・電気喉頭など、それぞれに合った発声方法を練習します。</p>
-  </div>
-  <div class="feature">
-    <h3>交流・相談</h3>
-    <p>同じ経験を持つ仲間との交流を通じ、不安や悩みを共有できます。</p>
-  </div>
-  <div class="feature">
-    <h3>情報提供</h3>
-    <p>医療・福祉制度や日常生活に役立つ情報を分かりやすくお伝えします。</p>
-  </div>
-</section>
 
-<section class="home-message">
-  <h2>ごあいさつ</h2>
-  <p>
-    悠声会は、声を失ったあとも安心して生活できるよう、
-    仲間とともに支え合う活動を続けています。
-  </p>
-</section>
-
-<section class="home-news">
-  <h2>お知らせ</h2>
-  <ul>
-    <li><span class="date">2025.○○.○○</span> 発声練習会を開催しました</li>
-    <li><span class="date">2025.○○.○○</span> 交流会のお知らせ</li>
-    <li><span class="date">2025.○○.○○</span> ホームページをリニューアルしました</li>
-  </ul>
-</section>
-
-<section class="home-cta">
-  <a href="/contact.html" class="btn">お問い合わせはこちら</a>
-</section>
 
 </main>
 <!-- TemplateEndEditable -->

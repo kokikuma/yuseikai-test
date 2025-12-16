@@ -11,49 +11,112 @@ background: #e6f0ed;
 padding: 30px 20px;
 text-align: center;
 }
-.home-hero {
-background: #dfeee9;
-padding: 60px 20px;
-text-align: center;
-}
-nav ul {
-list-style: none;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-padding: 0;
-margin: 0;
-background: #2f6f62;
-}
-nav a {
-color: #fff;
-text-decoration: none;
-padding: 15px 18px;
-}
+
+
+
 .container {
 max-width: 1000px;
 margin: 40px auto;
 padding: 20px;
 background: #fff;
 }
-.home-features {
-display: block;
-max-width: 1000px;
-margin: 40px auto;
-padding: 0 20px;
+
+
+
+
+/* ===== ヘッダー用 ===== */
+.hero {
+  background: #f4f7f8;
+  padding: 80px 20px;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.hero-lead {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 
-.home-features .feature {
-margin-bottom: 25px;
+
+
+
+/* ===== ナビ全体 ===== */
+.site-nav {
+  background: #ffffff;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e5e5;
 }
-.feature {
-background: #f0f5f4;
-padding: 20px;
-border-radius: 6px;
-flex: 1;
-min-width: 240px;
+
+/* ===== 横並びメニュー ===== */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+/* ===== ボタン風リンク ===== */
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #f2f6f8;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover {
+  background: #e1edf2;
+  transform: translateY(-2px);
+}
+
+/* ===== 強調ボタン（お問い合わせ） ===== */
+.nav-cta {
+  background: #1f7a8c;
+  color: #fff !important;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(31,122,140,0.35);
+}
+
+.nav-cta:hover {
+  background: #186272;
+}
+
+/* ===== スマホ対応 ===== */
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
 /* ===== 定例会 お知らせ（トップ用） ===== */
 /* ===== 定例会 お知らせ（トップ用・強調） ===== */
 .regular-meeting {
@@ -171,6 +234,26 @@ text-align: left;
 }
 
 
+/* ===== 定例会予定表 ===== */
+.home-features {
+display: block;
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+
+
+.home-features .feature {
+margin-bottom: 25px;
+}
+.feature {
+background: #f0f5f4;
+padding: 20px;
+border-radius: 6px;
+flex: 1;
+min-width: 240px;
+}
+
 
 /* ===== 問い合わせ ===== */
 
@@ -222,12 +305,11 @@ text-align: left;
   color: #555;
 }
 
-/* スマホ対応 */
-@media screen and (max-width: 600px) {
-  .contact-box {
-    flex-direction: column;
-  }
-}
+
+
+
+
+
 
 .contact-mail-btn {
   text-align: center;
@@ -248,3 +330,4 @@ text-align: left;
 .mail-button:hover {
   background-color: #004f99;
 }
+
