@@ -5,9 +5,7 @@ font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 color: #333;
 background: #f7f9f8;
 line-height: 1.8;
-}
-body {
-  font-size: 15px;
+font-size: 13px;
 }
 
 .panel p,
@@ -15,7 +13,6 @@ body {
   font-size: 0.95rem;
   line-height: 1.65;
 }
-
 
 
 header {
@@ -33,13 +30,58 @@ padding:0px 20px;
 background: #fff;
 }
 
+/* 上へ戻るボタン */
+.back-to-top {
+  position: fixed;      /* 常に画面に固定 */
+  right: 20px;          /* 右からの距離 */
+  bottom: 20px;         /* 下からの距離 */
+  padding: 12px 18px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 9999;        /* 他の要素より前に出す */
+}
+
+/* ホバー時 */
+.back-to-top:hover {
+  opacity: 1;
+  transform: translateY(-3px);}
+
+/* スムーズスクロール（対応ブラウザのみ） */
+html {
+  scroll-behavior: smooth;}
+
+
+/* ===== 細かい設定 ===== */
+
+.small-note {
+  margin: 0.3em 0 0;
+  font-size: 0.85em;
+  color: #555;
+}
+
+h2 {
+  margin: 0 0 12px;
+  padding-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2f6f62;
+  letter-spacing: 0.05em;
+}
+
+.right{text-align:right;}
 
 
 
 /* ===== ヘッダー用 ===== */
 .hero {
   background: #f4f7f8;
-  padding: 80px 20px;
+  padding: 60px 20px;
+  border-radius:12px;
 }
 
 .hero-inner {
@@ -63,14 +105,14 @@ background: #fff;
 
 
 
-/* ===== ナビ全体 ===== */
+/* ===== ナビ全体 ===== 
 .site-nav {
   background: #ffffff;
   padding: 16px 20px;
   border-bottom: 1px solid #e5e5e5;
-}
+}*/
 
-/* ===== 横並びメニュー ===== */
+/* ===== 横並びメニュー ===== 
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -79,9 +121,9 @@ background: #fff;
   list-style: none;
   margin: 0;
   padding: 0;
-}
+}*/
 
-/* ===== ボタン風リンク ===== */
+/* ===== ボタン風リンク =====
 .nav-link {
   display: inline-block;
   padding: 10px 20px;
@@ -104,19 +146,9 @@ background: #fff;
   background: #1f7a8c;
   color: #fff !important;
 }
+ */
 
 
-/* ===== 強調ボタン（お問い合わせ） ===== */
-.nav-cta {
-  background: #1f7a8c;
-  color: #fff !important;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(31,122,140,0.35);
-}
-
-.nav-cta:hover {
-  background: #186272;
-}
 
 /* ===== スマホ対応 ===== */
 @media (max-width: 600px) {
@@ -135,20 +167,127 @@ background: #fff;
 
 
 
+/* 大メニュー全体 */
+.main-nav {
+  background-color: #396e62;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 大メニュー横並び */
+.main-nav > ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 大メニューアイテム */
+.main-nav > ul > .menu-item {
+  position: relative;
+  margin:0 auto;
+}
+
+/* 大メニューリンク */
+.main-nav > ul > .menu-item > a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav > ul > .menu-item > a.active{color:#fff;}
+
+/* ホバー時 */
+.main-nav > ul > .menu-item > a:hover {
+  background-color: #396e62;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+/* active の大メニュー */
+.menu-item.active > a {
+  color: #fff;
+  border-bottom: 3px solid #396e62;
+  background-color: #396e62;
+}
+
+
+/* サブメニュー */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px 15px;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  white-space: nowrap;
+  z-index: 100;
+  transition: all 0.2s ease;
+}
+
+/* hover または active で表示 */
+.menu-item.has-submenu:hover .submenu,
+.menu-item.active .submenu {
+  display: flex;
+}
+
+/* サブメニューリンク */
+.submenu li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #555;
+  border-radius: 6px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.submenu li a:hover {
+  background-color: #396e62;
+  color: #fff;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 600px) {
+  .main-nav > ul {
+    flex-direction: column;
+  }
+  .submenu {
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 6px;
+    box-shadow: none;
+  }
+}
+
+
+
+
+
 /* ===== 定例会 お知らせ（トップ用） ===== */
-/* ===== 定例会 お知らせ（トップ用・強調） ===== */
+/* ===== 定例会 お知らせ（トップ用・強調） ===== 
 .regular-meeting {
   background: linear-gradient(135deg, #fffbe6 0%, #fdf3c0 100%);
   border-left: 8px solid #f0c040;
   border-radius: 12px;
   padding: 28px;
   margin-bottom: 35px;
-}
-
-.regular-meeting h3 {
-  margin-top: 0;
-  font-size: 1.35em;
-  color: #7a5200;
 }
 
 .regular-meeting h3 {
@@ -165,100 +304,14 @@ background: #fff;
   border-radius: 20px;
   margin-right: 8px;
 }
-
-.regular-lead {
-  font-size: 1.05em;
-  margin: 15px 0;
-}
-
-.regular-info {
-  list-style: none;
-  padding: 0;
-}
-
-.regular-info li {
-  padding: 6px 0;
-}
-
-.regular-note {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #555;
-}
-.address {
-  font-size: 0.9em;
-  color: #555;
-
-}
-
-.map-link {
-  color: #2f6f62;
-  font-weight: bold;
-  text-decoration: underline;
-}
+*/
 
 
 
-/* ===== 発声支援 日程表 ===== */
-.schedule-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 15px;
-font-size: 0.95em;
-}
 
 
-.schedule-table th,
-.schedule-table td {
-border: 1px solid #ddd;
-padding: 8px 10px;
-}
 
 
-.schedule-table th {
-background: #e6f0ed;
-text-align: left;
-}
-
-
-.news-list {
-  margin: 0;
-  padding-left: 1em;
-}
-
-.news-list li {
-  margin-bottom: 0.5em;
-}
-
-.news-list a {
-  margin-left: 0.5em;
-}
-
-.arrow {
-  margin: 0 0.4em;
-  font-weight: bold;
-}
-
-
-/* ===== 定例会予定表 ===== */
-.home-features {
-display: block;
-max-width: 1000px;
-margin: 40px auto;
-padding: 0 20px;
-}
-
-
-.home-features .feature {
-margin-bottom: 25px;
-}
-.feature {
-background: #f0f5f4;
-padding: 20px;
-border-radius: 6px;
-flex: 1;
-min-width: 240px;
-}
 
 
 /* ===== 問い合わせ ===== */
@@ -291,10 +344,6 @@ min-width: 240px;
   min-width: 260px;
 }
 
-.contact-item .icon {
-  font-size: 1.4em;
-  line-height: 1.4;
-}
 
 .contact-item a {
   color: #0066cc;
@@ -305,11 +354,6 @@ min-width: 240px;
   text-decoration: underline;
 }
 
-.small-note {
-  margin: 0.3em 0 0;
-  font-size: 0.85em;
-  color: #555;
-}
 
 
 
@@ -317,29 +361,8 @@ min-width: 240px;
 
 
 
-.contact-mail-btn {
-  text-align: center;
-  margin: 2em 0;
-}
 
-.mail-button {
-  display: inline-block;
-  padding: 0.9em 2em;
-  background-color: #0066cc;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.mail-button:hover {
-  background-color: #004f99;
-}
-
-
-
-/* ===== お知らせ ===== */
+/* ===== ブロック白バック影つき ===== */
 .home-news {
   max-width: 900px;
   margin: 30px auto;
@@ -350,10 +373,7 @@ min-width: 240px;
 }
 
 .home-news h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 1.6rem;
-  color: #2f6f62;
+  border-bottom: 2px solid #e0efea;
 }
 
 .home-news ul {
@@ -381,7 +401,7 @@ min-width: 240px;
 }
 
 
-/* ===== メニューテスト ===== */
+/* =====ブロック 左に線あり ===== */
 
 .home-panels {
   max-width: 900px;
@@ -405,17 +425,11 @@ min-width: 240px;
 
 
 .panel h2 {
-  margin: 0 0 18px;
-  padding-bottom: 10px;
-  font-size: 1.45rem;
-  font-weight: 600;
-  color: #2f6f62;
-  letter-spacing: 0.05em;
   border-bottom: 2px solid #e0efea;
 }
 
 
-/* ===== 定例会一覧 ===== */
+/* ===== 定例会ニュース一覧 ===== */
 .meeting-list {
   list-style: none;
   padding: 0 34px;
@@ -427,7 +441,7 @@ min-width: 240px;
   flex-wrap: wrap;
   align-items: center;
   gap: 10px 14px;
-  padding: 6px 0;
+  padding: 6px 30px;
   border-bottom: 1px solid #eee;
   font-size: 0.9rem;
 }
@@ -440,6 +454,8 @@ min-width: 240px;
   font-weight: 500;
 }
 
+
+/* ===== お知らせ ===== */
 /* ===== 状態バッジ ===== */
 .status {
   padding: 4px 10px;
@@ -473,6 +489,9 @@ min-width: 240px;
   color: #2f6f62;
   text-decoration: underline;
 }
+
+
+
 /* ===== パネル内 メールボタン ===== */
 .panel-mail-btn {
   display: inline-block;
@@ -492,6 +511,8 @@ min-width: 240px;
   background: #25584f;
   transform: translateY(-1px);
 }
+
+
 /* ===== メール表示（横並び） ===== */
 .panel-mail {
   margin-top: 18px;
@@ -520,26 +541,10 @@ min-width: 240px;
   display: inline-block;
 }
 
-/* 説明ラベル */
-.panel-mail-label {
-  margin-top: 8px;
-  font-size: 0.8rem;
-  color: #666;
-}
-
-/* メールアドレス */
-.panel-mail-address {
-  margin-top: 2px;
-  font-size: 0.85rem;
-}
-
-.panel-mail-address a {
-  color: #555;
-  text-decoration: underline;
-}
 
 
-/* ===== 最新定例会 ===== */
+
+/* ===== 最新定例会のお知らせ ===== */
 /* 最新定例会ブロック */
 .latest-meeting {
   background: #fef9e1;
@@ -555,7 +560,7 @@ min-width: 240px;
   align-items: center;
   gap: 8px;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 /* バッジ */
@@ -565,6 +570,7 @@ min-width: 240px;
   border-radius: 999px;
   padding: 3px 10px;
   font-weight: bold;
+  font-size:0.8em;
 }
 
 /* 日時・会場 */
@@ -588,19 +594,6 @@ min-width: 240px;
   color: #333;
 }
 
-/* 住所ブロック 
-.address {
-	display: block;
-	max-width: 420px;
-	margin: 5px auto 10px;
-	padding: 0px 14px;*/
-	/*background: #fdf9e2;
-	border-radius: 8px;
-	border: 2px solid #999;
-	text-align: left;
-	font-size: 0.85rem;
-	color: #555;
-}*/
 
 /* 住所ブロックはそのまま中央寄せ */
 .latest-info .address {
@@ -615,12 +608,19 @@ min-width: 240px;
   color: #555;
 }
 
-/* 地図リンク 
+
+.address {
+  font-size: 0.9em;
+  color: #555;
+}
+
 .map-link {
-  margin-left: 20px;
-  font-size: 0.8rem;
-  white-space: nowrap;
-}*/
+  color: #2f6f62;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left:2em;
+}
+
 
 /* 地図リンク */
 .latest-info .map-link {
@@ -628,7 +628,6 @@ min-width: 240px;
   font-size: 0.85rem;
   white-space: nowrap;
   text-decoration: underline;
-  color: #2f6f62;
 }
 
 
@@ -646,6 +645,9 @@ min-width: 240px;
   margin: 20px auto;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
+
+
 
 /* 資料リスト用ULデザイン（コンパクト版） */
 .doc-list {
@@ -679,5 +681,65 @@ min-width: 240px;
 .doc-list li a:hover {
   text-decoration: underline;
   color: #1f5a4d;
+}
+
+
+
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grid-list li a {
+  display: flex; /* 高さ揃え＆中央寄せ */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 20px;  /* ボックスの最小高さ */
+  font-size:0.9em;
+  border-radius: 8px;
+  background: #f9fdfb;
+  border: 1px solid #e0e0e0;
+  
+  padding: 10px;
+  text-decoration: none;
+  color: #2f6f62; /* 濃い緑文字 */
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.grid-list li a:hover {
+  background-color: #C8E6C9; /* ホバーで少し濃い緑 */
+  border-color: #388E3C; /* ホバーで枠色も濃く */
+  color: #1f5a4d;
+}
+
+
+
+
+/* ===== 日程表の表部分の設定 ===== */
+.schedule-table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 15px;
+font-size: 0.95em;
+}
+
+
+.schedule-table th,
+.schedule-table td {
+border: 1px solid #ddd;
+padding: 8px 10px;
+}
+
+
+.schedule-table th {
+background: #e6f0ed;
+text-align: left;
 }
 

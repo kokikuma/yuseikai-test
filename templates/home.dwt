@@ -7,12 +7,12 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="top">
 
 <header class="hero">
   <div class="hero-inner">
     <h1>
-      悠声会【YOU SAY】
+      悠声会<br>【YOU SAY KAI】
     </h1>
     <h2>
       声を失っても、人生は続きます。
@@ -37,6 +37,8 @@
 
 </main>
 <!-- TemplateEndEditable -->
+
+<a href="#top" class="back-to-top">TOP</a>
 
 <footer>
   <p>© NPO法人 悠声会</p>

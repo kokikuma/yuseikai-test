@@ -8,9 +8,9 @@
 <meta name="description" content="NPO法人 悠声会｜喉頭全摘後の方とご家族を支える団体">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
 <header>
- <h1>悠声会【YOU SAY】</h1>
+ <h1>悠声会<br>【YOU SAY KAI】</h1>
 
 </header>
 <!-- TemplateBeginEditable name="main" -->
@@ -20,6 +20,8 @@
 
 </div>
 <!-- TemplateEndEditable -->
+<a href="#top" class="back-to-top">TOP</a>
+
 <footer>
 <p>© NPO法人 悠声会</p>
 </footer>
