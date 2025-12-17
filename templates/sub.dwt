@@ -1,0 +1,75 @@
+<!-- ========== _templates/sub.dwt（下層ページ共通） ========== -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title><!-- TemplateBeginEditable name="doctitle" -->ページタイトル<!-- TemplateEndEditable --></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NPO法人 悠声会｜喉頭全摘後の方とご家族を支える団体">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body id="top">
+<header>
+ <h1>悠声会<br>【YOU SAY KAI】</h1>
+
+</header>
+<!-- TemplateBeginEditable name="main-nav" -->
+<nav class="main-nav">
+  <ul>
+    <li class="menu-item"><a href="../index.html">ホーム</a></li>
+    <li class="menu-item"><a href="../activity.html">定例会</a></li>
+    <li class="menu-item active"><a href="../techinfo.html">技術情報</a></li>
+    <li class="menu-item"><a href="../voice.html">会員の声・資料</a></li>
+    <li class="menu-item"><a href="../contact.html">お問合せ</a></li>
+  </ul>
+</nav>
+
+<nav class="sub-nav">
+  <div class="sub-nav-inner">
+    <ul>
+      <li class="sub-item active"><a href="tecinfo_file/faq.html">ＦＡＱ</a></li>
+      <li class="sub-item"><a href="">新しい手術法</a></li>
+      <li class="sub-item"><a href="">呼吸リハビリ動画</a></li>
+      <li class="sub-item"><a href="">呼吸リハビリ動画</a></li>
+      <li class="sub-item"><a href="">呼吸リハビリ動画</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<!-- TemplateEndEditable -->
+<main class="layout">
+<!-- TemplateBeginEditable name="side-menu" -->
+  <!-- 左：サイドメニュー -->
+  <aside class="side-nav" aria-label="サイドメニュー">
+    <h3 class="side-title">技術情報</h3>
+    <ul class="side-menu">
+      <li><a href="techinfo.html" class="is-active">技術情報トップ</a></li>
+      <li><a href="techinfo-voice.html">発声方法</a></li>
+      <li><a href="techinfo-care.html">ケア・生活</a></li>
+      <li><a href="techinfo-support.html">支援制度</a></li>
+    </ul>
+  </aside><!-- TemplateEndEditable -->
+
+
+  <!-- 右：本文 -->
+  <section class="content"><!-- TemplateBeginEditable name="content_r" -->
+  
+    <h2>ページタイトル</h2>
+    <p>ここに本文を入れます。</p>
+    <!-- TemplateEndEditable -->
+    
+  </section>
+
+</main>
+
+
+
+
+<a href="#top" class="back-to-top">TOP</a>
+
+<footer>
+<p>© NPO法人 悠声会</p>
+</footer>
+</body>
+</html>

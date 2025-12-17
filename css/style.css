@@ -5,12 +5,11 @@ font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
 color: #333;
 background: #f7f9f8;
 line-height: 1.8;
-font-size: 13px;
+font-size: 0.9rem;
 }
 
 .panel p,
 .panel li {
-  font-size: 0.95rem;
   line-height: 1.65;
 }
 
@@ -20,8 +19,6 @@ background: #e6f0ed;
 padding: 30px 20px;
 text-align: center;
 }
-
-
 
 .container {
 max-width: 1000px;
@@ -40,7 +37,7 @@ background: #fff;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 0.8rem;
   opacity: 0.8;
   transition: opacity 0.2s, transform 0.2s;
   z-index: 9999;        /* 他の要素より前に出す */
@@ -60,7 +57,7 @@ html {
 
 .small-note {
   margin: 0.3em 0 0;
-  font-size: 0.85em;
+  font-size: 0.8em;
   color: #555;
 }
 
@@ -102,54 +99,6 @@ h2 {
 }
 
 
-
-
-
-/* ===== ナビ全体 ===== 
-.site-nav {
-  background: #ffffff;
-  padding: 16px 20px;
-  border-bottom: 1px solid #e5e5e5;
-}*/
-
-/* ===== 横並びメニュー ===== 
-.nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}*/
-
-/* ===== ボタン風リンク =====
-.nav-link {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 999px;
-  background: #f2f6f8;
-  color: #333;
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
-  transition: all 0.25s ease;
-}
-
-.nav-link:hover {
-  background: #e1edf2;
-  transform: translateY(-2px);
-}
-
-.nav-link.active {
-  background: #1f7a8c;
-  color: #fff !important;
-}
- */
-
-
-
 /* ===== スマホ対応 ===== */
 @media (max-width: 600px) {
   .nav-menu {
@@ -164,10 +113,7 @@ h2 {
 }
 
 
-
-
-
-/* 大メニュー全体 */
+/* ==========大メニュー全体========== */
 .main-nav {
   background-color: #396e62;
   padding: 10px 20px;
@@ -197,70 +143,26 @@ h2 {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.9rem;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.main-nav > ul > .menu-item > a.active{color:#fff;}
 
 /* ホバー時 */
 .main-nav > ul > .menu-item > a:hover {
-  background-color: #396e62;
-  color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+	background-color: #396e62;
+	color: #CCC;
+	transform: translateY(-3px);
+	box-shadow: 0 4px 8px rgba(0,0,0,0.5);
 }
 
 /* active の大メニュー */
-.menu-item.active > a {
-  color: #fff;
-  border-bottom: 3px solid #396e62;
-  background-color: #396e62;
+.main-nav > ul > .menu-item.active > a{
+  background:#4f8a7b;
+  color:#fff;
 }
 
-
-/* サブメニュー */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  flex-direction: row;
-  gap: 15px;
-  padding: 10px 15px;
-  margin: 0;
-  list-style: none;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  white-space: nowrap;
-  z-index: 100;
-  transition: all 0.2s ease;
-}
-
-/* hover または active で表示 */
-.menu-item.has-submenu:hover .submenu,
-.menu-item.active .submenu {
-  display: flex;
-}
-
-/* サブメニューリンク */
-.submenu li a {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
-  color: #555;
-  border-radius: 6px;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.submenu li a:hover {
-  background-color: #396e62;
-  color: #fff;
-}
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 600px) {
@@ -280,34 +182,192 @@ h2 {
 
 
 
-/* ===== 定例会 お知らせ（トップ用） ===== */
-/* ===== 定例会 お知らせ（トップ用・強調） ===== 
-.regular-meeting {
-  background: linear-gradient(135deg, #fffbe6 0%, #fdf3c0 100%);
-  border-left: 8px solid #f0c040;
-  border-radius: 12px;
-  padding: 28px;
-  margin-bottom: 35px;
+/*==========上部 サブナビ全体========== */
+.sub-nav{
+  background-color:#4f8a7b;
+  border-bottom:2px solid #ddd;
 }
 
-.regular-meeting h3 {
-  margin-top: 0;
-  font-size: 1.3em;
-  color: #8a5a00;
+/* 中央寄せのラッパー */
+.sub-nav-inner{
+  max-width:1000px;   /* サイト幅に合わせて調整 */
+  margin:0 auto;
+  padding:5px 20px 7px;
+  text-align:center; /* 補足文を中央に */
 }
 
-.badge {
-  background: #f0c040;
-  color: #fff;
-  font-size: 0.75em;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-right: 8px;
+
+/* サブナビ本体 */
+.sub-nav ul{
+  display:flex;
+  justify-content:center;  /* ← ここがセンター寄せ */
+  gap:18px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+/* リンクデザイン */
+.sub-nav a{
+  display:block;
+  padding:5px 16px;
+  color:#fff;
+  font-weight:600;
+  font-size:13px;
+  text-decoration:none;
+  border-radius:8px;
+/*  transition:all .3s ease;*/
+}
+
+.sub-nav a:hover{
+  color:#ccc;
+  transform:translateY(-2px);
+  box-shadow:0 4px 8px rgba(0,0,0,0.35);
+}
+
+.sub-nav .sub-item.active > a{
+  background:rgba(255,255,255,0.18);
+/*  border-bottom:3px solid rgba(255,255,255,0.7);*/
+}
+
+
+
+/*==========下層ページ 左サブナビ========== */
+
+/* ===== 2カラムレイアウト（左サイドメニュー） ===== */
+.layout{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 8px;
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+}
+
+
+/* スマホ：縦積み */
+@media (max-width: 600px){
+  .layout{
+    grid-template-columns: 1fr;
+  }
+  .side-nav{
+    position: static;
+  }
+}
+
+
+
+
+
+/* =====================
+  下層ページ レイアウト
+===================== 
+.page-layout{
+  max-width:1100px;
+  margin:24px auto;
+  padding:0 20px;
+
+  display:grid;
+  grid-template-columns:240px 1fr;
+  gap:24px;
+}
+*/
+/* =====================
+  左サブナビ
+===================== */
+.side-nav{
+  background:#fff;
+  border-radius:14px;
+  padding:4px;
+  color:#4f8a7b;
+  position:sticky;
+  top:16px;
+  align-self:start;
+}
+
+.side-nav-note{
+  margin:0 0 12px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.05em;
+  color:rgba(255,255,255,.9);
+}
+
+.side-nav ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:10px;
+}
+
+.side-nav a{
+  display:block;
+  padding:3px 12px;
+  color:#4f8a7b;
+  text-decoration:none;
+  font-weight:600;
+  font-size:13px;
+  border-radius:10px;
+  transition:.25s;
+}
+
+.side-nav a:hover{
+  color:#ccc;
+  transform:translateY(-2px);
+  box-shadow:0 4px 8px rgba(0,0,0,.35);
+}
+
+/* active：今ここ感 */
+.side-nav .sub-item.active > a{
+  background:rgba(255,255,255,.18);
+  border-left:6px solid rgba(255,255,255,.85);
+  color:#666;
+}
+
+
+.side-title{
+  margin: 0 0 10px;
+  font-size: 1.0rem;
+  letter-spacing: .02em;
+}
+
+/* =====================
+  右メインコンテンツ
+===================== 
+.page-main{
+  background:#fff;
+  border-radius:14px;
+  padding:22px;
+}
+
+.page-main h1{
+  margin-top:0;
 }
 */
 
 
 
+/* 右側コンテンツ */
+.content{
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+
+/* =====================
+  スマホ対応
+===================== */
+@media (max-width:600px){
+  .page-layout{
+    grid-template-columns:1fr;
+  }
+  .side-nav{
+    position:static;
+  }
+}
 
 
 
@@ -370,6 +430,7 @@ h2 {
   background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  font-size: 0.9rem;
 }
 
 .home-news h2 {
@@ -387,7 +448,6 @@ h2 {
   gap: 16px;
   padding: 12px 0;
   border-bottom: 1px solid #e5e5e5;
-  font-size: 0.95rem;
 }
 
 .home-news li:last-child {
@@ -416,6 +476,7 @@ h2 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.06);
   border-left: 6px solid #2f6f62;
   margin-bottom: 30px;
+  font-size: 0.9rem;
 }
 
 .panel:last-child {
@@ -443,7 +504,6 @@ h2 {
   gap: 10px 14px;
   padding: 6px 30px;
   border-bottom: 1px solid #eee;
-  font-size: 0.9rem;
 }
 
 .meeting-list li:last-child {
@@ -485,7 +545,7 @@ h2 {
 /* 詳細リンク */
 .detail-link {
   margin-left: auto;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #2f6f62;
   text-decoration: underline;
 }
@@ -500,7 +560,6 @@ h2 {
   border-radius: 999px;
   background: #2f6f62;
   color: #ffffff;
-  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   align-self: flex-start;
@@ -521,7 +580,6 @@ h2 {
 
 .panel-mail-inline {
   margin-top: 8px;
-  font-size: 0.85rem;
   color: #555;
 }
 
@@ -560,7 +618,6 @@ h2 {
   align-items: center;
   gap: 8px;
   font-weight: 600;
-  font-size: 1.2rem;
 }
 
 /* バッジ */
@@ -570,7 +627,6 @@ h2 {
   border-radius: 999px;
   padding: 3px 10px;
   font-weight: bold;
-  font-size:0.8em;
 }
 
 /* 日時・会場 */
@@ -579,7 +635,6 @@ h2 {
   display: flex;
   gap: 10px;              /* ラベルと値の間隔 */
   margin-bottom: 6px;
-  font-size: 0.95rem;
   line-height: 1.5;
 }
 .latest-info .info-label {
@@ -604,13 +659,12 @@ h2 {
   background: #fff;
   border-radius: 8px;
   text-align: left;
-  font-size: 0.9rem;
   color: #555;
 }
 
 
 .address {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #555;
 }
 
@@ -634,11 +688,11 @@ h2 {
 /* 次回開催日枠付き */
 .next-meeting.highlight {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #c00000;
   background: #fff0f0;
-  padding: 12px 20px;
+  padding: 12px 10px;
   border-radius: 8px;
   border: 2px solid #e0a0a0;
   max-width: 300px;
@@ -727,7 +781,6 @@ h2 {
 width: 100%;
 border-collapse: collapse;
 margin-top: 15px;
-font-size: 0.95em;
 }
 
 
